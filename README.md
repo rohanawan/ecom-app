@@ -57,3 +57,14 @@ To get started with the development environment:
    ```bash
    git clone <repository-url>
    cd <project-directory>
+
+2. **Install Dependencies**:
+   ```bash
+  npm install / npm i
+
+3. **Run Project**:
+   ```bash
+   npm start
+
+
+
