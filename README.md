@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# E-Commerce Store Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Welcome to the E-Commerce Store Project! This React-based application is designed to provide a seamless shopping experience. The project leverages modern frontend development practices, including custom hooks, context API, and modular code organization.
 
-In the project directory, you can run:
+## Project Structure
 
-### `npm start`
+The project is organized into several key directories and files to ensure scalability and maintainability:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **`src/`**: The source code of the application.
+  - **`assets/`**: Contains static assets such as images and fonts.
+    - `images/`: Folder for image assets (e.g., product images, logos).
+    - `fonts/`: Folder for custom fonts.
+  - **`hooks/`**: Custom React hooks for reusable logic.
+    - `useCart.js`: Custom hook for managing the shopping cart.
+    - `useAuth.js`: Custom hook for handling user authentication.
+    - `useProduct.js`: Custom hook for fetching and managing product data.
+  - **`components/`**: React components used throughout the application.
+    - `Header.js`: Component for the top navigation bar.
+    - `Footer.js`: Component for the bottom footer section.
+    - `ProductCard.js`: Component for displaying individual product details.
+    - `Cart.js`: Component for the shopping cart interface.
+    - `LoginForm.js`: Component for user login form.
+    - `CheckoutForm.js`: Component for the checkout process.
+  - **`config/`**: Configuration files and environment variables.
+    - `apiConfig.js`: Configuration file for API endpoints and request settings.
+    - `appConfig.js`: General configuration settings for the application.
+  - **`constants/`**: Constant values used across the application.
+    - `routes.js`: Constant values for application routes.
+    - `actionTypes.js`: Constants for action types in state management tools.
+    - `currency.js`: Constants for currency symbols and formats.
+  - **`pages/`**: Page components representing different views or routes.
+    - `HomePage.js`: Component for the homepage with featured products.
+    - `ProductPage.js`: Component for displaying details of a single product.
+    - `CartPage.js`: Component for the shopping cart overview.
+    - `CheckoutPage.js`: Component for the checkout process.
+    - `LoginPage.js`: Component for user login.
+  - **`styles/`**: CSS or styled-components for styling the application.
+    - `main.css`: Global CSS styles.
+    - `ProductCard.module.css`: CSS module for the `ProductCard` component.
+    - `CheckoutPage.module.css`: CSS module for the `CheckoutPage` component.
+  - **`contexts/`**: Context API providers and custom context hooks.
+    - `CartContext.js`: Context provider and hook for managing the shopping cart state.
+    - `AuthContext.js`: Context provider and hook for handling user authentication state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Custom Hooks**:
+  - **`useCart`**: Manages cart state, including adding/removing items and calculating totals.
+  - **`useAuth`**: Handles user login, logout, and authentication state.
+  - **`useProduct`**: Fetches product data from an API and manages product-related logic.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Constants**:
+  - Located in the `constants/` directory, these values include route paths, action types, and currency symbols.
 
-### `npm run build`
+- **Context API**:
+  - **`CartContext`**: Provides cart state and actions to manage the shopping cart across the application.
+  - **`AuthContext`**: Manages user authentication state and provides login and logout functionalities.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started with the development environment:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <project-directory>
